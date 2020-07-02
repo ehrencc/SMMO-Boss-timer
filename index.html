@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="css/style.css">   -->
+        
+        
+        <style>
+            body{
+                background-color:#53485B ;
+                text-shadow:1px 1px 1px #061621;
+                font-family: 'Open Sans', sans-serif;
+            }
+            h3{
+                color: #FFFFFF;
+                font-size:  20px; 
+                font-weight: bold;
+            }
+            h1{
+                color: #FFFFFF;
+            }
+            .col img{
+                padding-bottom: 10px;
+            }
+            .col-prev img{
+                padding-bottom: 10px;
+            }
+            .box h1{
+                margin-bottom: 0em;
+            }
+            .container-fluid{
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .box{
+                background-color:#353535 ;
+                box-shadow: rgba(0, 0, 0, 0.075) 0px 0.125rem 0.25rem !important;
+                border-radius: 4px;
+                padding: 1em;
+            }
+            .text-center{
+                text-align: center !important;
+            }
+            .row{
+              margin-left: -15px;
+              margin-right: -15px;  
+            }
+            .col{
+                max-width: 100%;
+            }
+            .col-prev{
+                max-width: 100%;
+                position: absolute;
+                top: 26.5%;
+                left: 14%;
+                opacity: 0.7;
+            }
+            #boss-title{
+                color: #FFFFFF;
+            }
+            #footersplit{
+                color: #b3b7ce;
+                padding-top: 5px;
+            }
+            #bossTimer{
+                padding-top: 5px;
+                color: aqua;
+            }
+        </style>
+    </head>
+
+        <body>
+            <main role="main" class="container-fluid" style="max-width: 1110px;">
+                <div class="box text-center">
+                    <h1>SimpleMMO Boss Timer</h1> 
+                    
+                    <div class="row">
+                        
+                        <div class="col-prev">
+                            <h3>Previous boss</h3>
+                            <img src="img/balthazar.png">
+                            <div id="boss-title">B</div>
+                            <div id="footersplit">
+                                <small>18:08 Thursday</small>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <h3>Next boss</h3>
+                            <img src="img/balthazar.png">
+                            <div id="boss-title">B</div>
+                            <div id="footersplit">
+                                <small>17:08 Thursday (GMT+1)</small>
+                            </div>
+                            <div id="bossTimer"></div>
+                        </div>
+                    </div>
+                    
+                    
+                 </div>
+            </main> 
+            
+        <script type="text/javascript" src="js/index.js"></script>
+            
+        </body>
+
+</html>
